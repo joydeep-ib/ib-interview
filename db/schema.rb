@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200116132447) do
+ActiveRecord::Schema.define(version: 20200116133649) do
+
+  create_table "interviews", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.datetime "startdt"
+    t.datetime "enddt"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "participants", force: :cascade do |t|
     t.string "name"
