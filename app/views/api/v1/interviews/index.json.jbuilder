@@ -1,0 +1,1 @@
+json.array! @interviews, :id, :title, :description, :startdt, :enddt, :created_at
